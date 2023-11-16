@@ -120,8 +120,10 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_UP_VI_Tunjungan_1_0() {
-            return {
+        function style_UP_VI_Tunjungan_1_0(feature) {
+            switch(String(feature.properties['Zona'])) {
+                case 'Industri':
+                    return {
                 pane: 'pane_UP_VI_Tunjungan_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -131,8 +133,175 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(190,207,80,1.0)',
+                fillColor: 'rgba(110,123,207,1.0)',
                 interactive: true,
+            }
+                    break;
+                case 'Jalan':
+                    return {
+                pane: 'pane_UP_VI_Tunjungan_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(153,203,61,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Perdagangan dan Jasa':
+                    return {
+                pane: 'pane_UP_VI_Tunjungan_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(213,194,88,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Perkantoran':
+                    return {
+                pane: 'pane_UP_VI_Tunjungan_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(61,227,122,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Perlindungan Setempat':
+                    return {
+                pane: 'pane_UP_VI_Tunjungan_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(201,24,50,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Perumahan':
+                    return {
+                pane: 'pane_UP_VI_Tunjungan_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(52,240,24,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Peruntukan Khusus':
+                    return {
+                pane: 'pane_UP_VI_Tunjungan_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(71,157,207,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Ruang Terbuka Hijau':
+                    return {
+                pane: 'pane_UP_VI_Tunjungan_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(230,65,169,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Saluran':
+                    return {
+                pane: 'pane_UP_VI_Tunjungan_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(213,133,90,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Sarana Pelayanan Umum':
+                    return {
+                pane: 'pane_UP_VI_Tunjungan_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(202,85,220,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Sungai':
+                    return {
+                pane: 'pane_UP_VI_Tunjungan_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(149,106,223,1.0)',
+                interactive: true,
+            }
+                    break;
+                default:
+                    return {
+                pane: 'pane_UP_VI_Tunjungan_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(120,221,207,1.0)',
+                interactive: true,
+            }
+                    break;
             }
         }
         map.createPane('pane_UP_VI_Tunjungan_1');
@@ -160,7 +329,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/UP_VI_Tunjungan_1.png" /> UP_VI_Tunjungan': layer_UP_VI_Tunjungan_1,"Google Satellite": layer_GoogleSatellite_0,}).addTo(map);
+        L.control.layers(baseMaps,{'UP_VI_Tunjungan<br /><table><tr><td style="text-align: center;"><img src="legend/UP_VI_Tunjungan_1_Industri0.png" /></td><td>Industri</td></tr><tr><td style="text-align: center;"><img src="legend/UP_VI_Tunjungan_1_Jalan1.png" /></td><td>Jalan</td></tr><tr><td style="text-align: center;"><img src="legend/UP_VI_Tunjungan_1_PerdagangandanJasa2.png" /></td><td>Perdagangan dan Jasa</td></tr><tr><td style="text-align: center;"><img src="legend/UP_VI_Tunjungan_1_Perkantoran3.png" /></td><td>Perkantoran</td></tr><tr><td style="text-align: center;"><img src="legend/UP_VI_Tunjungan_1_PerlindunganSetempat4.png" /></td><td>Perlindungan Setempat</td></tr><tr><td style="text-align: center;"><img src="legend/UP_VI_Tunjungan_1_Perumahan5.png" /></td><td>Perumahan</td></tr><tr><td style="text-align: center;"><img src="legend/UP_VI_Tunjungan_1_PeruntukanKhusus6.png" /></td><td>Peruntukan Khusus</td></tr><tr><td style="text-align: center;"><img src="legend/UP_VI_Tunjungan_1_RuangTerbukaHijau7.png" /></td><td>Ruang Terbuka Hijau</td></tr><tr><td style="text-align: center;"><img src="legend/UP_VI_Tunjungan_1_Saluran8.png" /></td><td>Saluran</td></tr><tr><td style="text-align: center;"><img src="legend/UP_VI_Tunjungan_1_SaranaPelayananUmum9.png" /></td><td>Sarana Pelayanan Umum</td></tr><tr><td style="text-align: center;"><img src="legend/UP_VI_Tunjungan_1_Sungai10.png" /></td><td>Sungai</td></tr><tr><td style="text-align: center;"><img src="legend/UP_VI_Tunjungan_1_11.png" /></td><td></td></tr></table>': layer_UP_VI_Tunjungan_1,"Google Satellite": layer_GoogleSatellite_0,}).addTo(map);
         setBounds();
         </script>
     </body>
